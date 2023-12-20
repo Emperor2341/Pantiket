@@ -43,7 +43,9 @@ server.all("*", (req, res) => {
   });
   
   async function main() {
-    await mongoose.connect("mongodb://localhost:27017/pann");
+    await mongoose.connect(
+      "mongodb+srv://oluwanifemiomisanmi11:XJso2ZBzncaJQum6@cluster0.87wyeb2.mongodb.net/"
+    );
     console.log("DB connected");
   }
   
